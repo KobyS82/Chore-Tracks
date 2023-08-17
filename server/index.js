@@ -19,4 +19,5 @@ app.use(cors());
 const CONNECTION_URL = process.env.MONGODB_URI || "mongodb://localhost:27017/memories";
 const PORT = process.env.PORT || 5000;
 
+mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
 
